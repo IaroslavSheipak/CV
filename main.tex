@@ -1,0 +1,172 @@
+% Welcome to the simple Undergraduate Complexity Research CV-resume template!
+% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{2pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \it\vspace{-12pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \bfseries Iaroslav Sheipak} \\[4pt]
+\end{center}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+    \large Moscow, Russia \\
+    
+    \large About Me \\
+    
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    \raggedleft % right align the text
+    \href{mailto:iaroslav.sheipak@gmail.com}{\large iaroslav.sheipak@gmail.com} \\
+    \href{https://t.me/Datboiiiiii8}{\large t.me/Datboiiiiii8} \\
+    % \vspace{2pt} % adjust the vertical spacing to match the left side
+    \href{https://www.linkedin.com/in/yaroslav-sheypak}{\large www.linkedin.com/in/yaroslav-sheypak} \\
+\end{minipage}
+\vspace{-25pt}
+\section*{} 
+
+
+\resumeSubHeadingListStart
+    {Qualified software engineer with over 3 years of experience in computer vision and machine learning. Contributed significantly to projects on autonomous driving, and digital avatar generation using GAN. Expert in C++, Python, and frameworks such as PyTorch and ROS2.}
+\resumeSubHeadingListEnd
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Sber Technologies}{12.2021 -- Now}
+        {Computer Vision/Python Engineer}{2 years 9 months}
+        
+    \resumeItemListStart
+        \resumeItem{SberTech - Linux Engineer:}
+        \resumeItem{Focused on the development of a server rpm-based distribution;}
+        \resumeItem{Integrated sources for pandas and sklearn packages;}
+        \resumeItem{Generated documentation for onboarding new employees.}
+    \resumeItemListEnd
+
+    \resumeItemListStart
+        \resumeItem{SberAutotech - CV ML Engineer:}
+        \resumeItem{Developed computer vision algorithms for autonomous vehicles;}
+        \resumeItem{Created a dataset for measuring MOTA/MOTP metrics and training a recurrent neural network for object tracking, using CVAT;}
+        \resumeItem{Trained a neural network for tracking on Pytorch, improving tracking metrics by 5\%;}
+        \resumeItem{Wrote an algorithm to assess MOTA/MOTP metrics on Python3 using Numpy and Matplotlib;}
+        \resumeItem{Developed a new asynchronous TensorRT 2D object tracking algorithm, reducing lost tracks by 5\%;}
+        \resumeItem{Conducted comprehensive tests on 2D object tracking, improving key metrics (MOTP and MOTA) by 10\%;}
+        \resumeItem{Optimized and corrected the algorithm for fusing camera and lidar data, fixing multiple errors and architectural flaws, optimized interaction with ROS2;}
+        \resumeItem{Implemented debugging visualization for 3D cluster point projections in Python3.}
+    \resumeItemListEnd
+
+    \resumeItemListStart
+        \resumeItem{SberDevices - ML Engineer:}
+        \resumeItem{Worked on digital avatar generation;}
+        \resumeItem{Developed and improved GAN models with PyTorch3, increasing the client base by 10\%, enhancing service quality;}
+        \resumeItem{Led the data labeling process for more than 2000 images, improving neural network accuracy;}
+        \resumeItem{Added new features to an HTTP server, including dynamic character generation;}
+        \resumeItem{Approached video generation innovatively, allowing users to choose clothing colors for characters;}
+        \resumeItem{Debugged video generation processes in C++, increasing efficiency by 25\%, leading to the discovery and correction of critical errors;}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+    \resumeSubheading
+        {Lomonosov Moscow State University,
+        Faculty of Space Research}{09.2020 -- 06.2021}
+        {Developer for ML course}{10 months}
+        \resumeItemListStart
+            \resumeItem{Developed and implemented an automated homework evaluation script for a master’s level ML course, significantly streamlining grading processes and enhancing feedback accuracy for students;}
+            \resumeItem{Created and compiled a comprehensive set of programming test tasks and exercises in Python3 for assessing students' knowledge and skills, tailored to the specifics of the course and focused on practical programming application in space research and machine learning;}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Moscow Institute of Physics and Technology}{2023 -- 2025}
+        {Master's in Machine Learning and Data Analysis}{}
+
+    \resumeSubheading
+        {RTU MIREA, Bachelor's degree}{2018 -- 2023}
+        {Bachelor's in Applied Mathematics and Data Analysis}{}
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{\textbf{Languages:} C++, Python, SQL}
+    \item{\textbf{Technologies:} PyTorch, ROS2, Linux, Git, Docker}
+    \item{\textbf{Areas of Expertise:} Machine Learning, Computer Vision, Data Analysis}
+\end{itemize}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{\textbf{Russian:} Native}
+    \item{\textbf{English:} Fluent}
+\end{itemize}
+
+\end{document}
